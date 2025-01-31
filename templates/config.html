@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure API Key</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Configure Your API Key</h1>
+        <form id="api-key-form">
+            <label for="api-key">Enter your OpenAI API key:</label>
+            <input type="text" id="api-key" name="api_key" required>
+            <button type="submit">Save</button>
+        </form>
+        <p id="status-message"></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
